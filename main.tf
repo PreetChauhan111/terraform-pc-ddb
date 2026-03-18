@@ -17,7 +17,7 @@ module "dynamodb-table" {
   ignore_changes_global_secondary_index  = var.ignore_changes_global_secondary_index
   import_table                           = var.import_table
   local_secondary_indexes                = var.local_secondary_indexes
-  name                                   = local.name
+  name                                   = var.name
   on_demand_throughput                   = var.on_demand_throughput
   point_in_time_recovery_enabled         = var.point_in_time_recovery_enabled
   point_in_time_recovery_period_in_days  = var.point_in_time_recovery_period_in_days
@@ -35,7 +35,7 @@ module "dynamodb-table" {
   stream_enabled                         = var.stream_enabled
   stream_view_type                       = var.stream_view_type
   table_class                            = var.table_class
-  tags                                   = local.tags
+  tags                                   = var.tags
   timeouts                               = var.timeouts
   ttl_attribute_name                     = var.ttl_attribute_name
   ttl_enabled                            = var.ttl_enabled
