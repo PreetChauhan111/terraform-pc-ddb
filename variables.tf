@@ -1,9 +1,3 @@
-variable "environment" {
-  description = "Environment to deploy dynamodb-table in"
-  type = string
-  default = "dev"
-}
-
 variable "create_table" {
   description = "Controls if DynamoDB table and associated resources are created"
   type        = bool
